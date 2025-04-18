@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npm ci --legacy-peer-deps"
+    "postinstall": "node --max-old-space-size=4096 /opt/render/project/src/node_modules/.bin/npm install --legacy-peer-deps"
   },
   "eslintConfig": {
     "extends": [
